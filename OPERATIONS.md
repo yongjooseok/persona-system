@@ -62,13 +62,17 @@ draft-with-rationale 포맷으로.
 
 ---
 
-## 5. 신규 페르소나 추가 절차
+## 5. 새 페르소나가 필요할 때
 
-새 페르소나가 필요할 때 다음 4단계를 따른다.
+표준 절차는 [`CREATING-NEW-PERSONA.md`](./CREATING-NEW-PERSONA.md)에 정의되어 있다.
 
-1. **6요소로 정의 작성** — Role / Goal / Backstory / Tools / Lens / Algorithm. Lens·Algorithm 생략 금지.
-2. **파일 배치** — `employees/<persona-codename>.md`로 저장. frontmatter에 `type: persona`, `codename: <영문 식별자>` 포함.
-3. **자체완결성 점검** — 외부 경로 참조가 없는지 확인. 새 스킬 필요 시 `skills/` 아래로 복사.
-4. **OPERATIONS.md 갱신** — 위 §2 매핑 표에 자연어 식별 키워드 추가.
+요약 (5단계):
+1. `templates/new-persona-input.md`로 의뢰인 입력 수집 (용도·문제·산출물 형태)
+2. 원형·차용 방식 결정 — 실존 인물 1명 차용 / 방법론 학파 융합 중 택1
+3. `templates/persona-definition-template.md`로 6요소 + 보조요소 설계
+4. `templates/persona-validation-tests.md`의 3가지 테스트 통과 (대비 / 도메인 이동 / 자기 설명)
+5. `employees/`에 배치 후 README의 employees 트리·이 문서의 §2 매핑 표 갱신
 
-산출물 표준이 새로 필요한 경우엔 `output-standards/`에 템플릿 1개를 추가하고 매핑 표에 등록한다. 추상화는 두 번째 사례가 생길 때 시작한다 (YAGNI).
+세부 가이드·약점 신호·v0.1 이후 패치/폐기 절차는 `CREATING-NEW-PERSONA.md` 참조.
+
+산출물 표준이 새로 필요한 경우엔 `output-standards/`에 템플릿 1개를 추가하고 §2 매핑 표에 등록한다. 추상화는 두 번째 사례가 생길 때 시작한다 (YAGNI).

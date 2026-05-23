@@ -13,13 +13,19 @@
 ```
 persona-system/
 ├── README.md                 # 이 문서 — 프로젝트 한 줄·핵심 결정·디렉토리·동기화
-├── OPERATIONS.md             # 호출 메커니즘·매핑 표·신규 페르소나 추가 절차
+├── OPERATIONS.md             # 호출 메커니즘·매핑 표·신규 페르소나 안내
+├── CREATING-NEW-PERSONA.md   # 신규 페르소나 생성 표준 절차 (시스템 v0.2)
 │
 ├── employees/                # 페르소나 정의
 │   └── content-strategist-essence.md
 │
 ├── output-standards/         # 산출물 표준 템플릿
 │   └── draft-with-rationale.md
+│
+├── templates/                # 페르소나 생성용 양식·템플릿·검증 테스트
+│   ├── new-persona-input.md
+│   ├── persona-definition-template.md
+│   └── persona-validation-tests.md
 │
 ├── skills/                   # 프로젝트 내부 스킬 (외부 의존 끊긴 복사본)
 │   ├── content-os/
@@ -41,6 +47,10 @@ draft-with-rationale 포맷으로.
 ```
 
 전체 식별 키워드·호출 패턴은 `OPERATIONS.md` 참조.
+
+## 새 페르소나 만들기
+
+새 페르소나는 즉흥 설계가 아닌 표준 절차로 만든다. 입력 양식·정의 템플릿·검증 테스트는 `templates/`에 있고, 전체 절차는 [`CREATING-NEW-PERSONA.md`](./CREATING-NEW-PERSONA.md) 참조.
 
 ## 다기기 동기화
 
