@@ -77,3 +77,12 @@ draft-with-rationale 포맷으로.
 세부 가이드·약점 신호·v0.1 이후 패치/폐기 절차는 `CREATING-NEW-PERSONA.md` 참조.
 
 산출물 표준이 새로 필요한 경우엔 `output-standards/`에 템플릿 1개를 추가하고 §2 매핑 표에 등록한다. 추상화는 두 번째 사례가 생길 때 시작한다 (YAGNI).
+
+---
+
+## 페르소나를 환경에 이식할 때
+
+페르소나를 외부 팀·환경에 배치할 때는 단순 복사가 아닌 환경 적응 절차를 거친다.
+5개 Customization Zone을 환경에 맞춰 조정한다.
+
+상세 절차: `DEPLOYMENT.md` 참조.

@@ -8,6 +8,8 @@
 - **운영 방식**: 1차 단계에서는 MD 정의 파일로 운영한다. Sub-agent 마이그레이션은 검증 후 결정.
 - **자체완결성**: 외부 user skills에 의존하지 않는다. 필요한 도구는 프로젝트 안에 복사 보유한다. 외부 변경이 이 프로젝트에 영향을 주지 못한다.
 
+페르소나는 분야 전문가로 정의되며, 환경 이식 시 5개 Customization Zone으로 적응한다.
+
 ## 디렉토리
 
 ```
@@ -15,6 +17,7 @@ persona-system/
 ├── README.md                 # 이 문서 — 프로젝트 한 줄·핵심 결정·디렉토리·동기화
 ├── OPERATIONS.md             # 호출 메커니즘·매핑 표·신규 페르소나 안내
 ├── CREATING-NEW-PERSONA.md   # 신규 페르소나 생성 표준 절차 (시스템 v0.2)
+├── DEPLOYMENT.md             # 페르소나 환경 이식 표준 절차 (시스템 v0.3)
 │
 ├── employees/                # 페르소나 정의
 │   ├── content-strategist-essence.md
