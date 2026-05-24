@@ -63,7 +63,31 @@
 | **Lens** | 우선 보는 것 3~4개 + 후순위 명시 | 일반적 미덕 나열 ("정확성·일관성") |
 | **Algorithm** | 의뢰 받았을 때 사고 순서 5~8단계 | "분석한다 → 작성한다" 수준의 추상 |
 
+| 추가 섹션 | 설계 가이드 | 약점 신호 |
+|---|---|---|
+| **Customization Zones** | 5개 Zone 모두 작성. 분야 보편/환경 적응 분리 명시 | Zone 모두 "환경에 위임"만 — 전문성 정의 부재 |
+| **Meta — 알려진 한계** | 설계 시점에 의도적으로 미해결한 사항 명시 | "없음"만 표기 — 자기 인식 부재 |
+
 **최우선 점검:** Lens·Algorithm이 **이 페르소나만의 것**인가? 다른 페르소나로 바꿔도 그대로 통용된다면 깊이 부족.
+
+### Customization Zones 설계 (필수)
+
+분야 전문가로 페르소나를 정의한 뒤, 5개 Customization Zone을 작성한다.
+Zones는 "분야 보편(보존)"과 "환경 적응(이식 시 결정)"을 명시하여 
+환경 이식 시 어디를 조정해야 하는지 사전에 표시한다.
+
+5개 Zone:
+- Zone 1: Output Format (산출물 양식)
+- Zone 2: Fact Integrity (사실 무결성 규율)
+- Zone 3: Tools & Permissions (도구·권한)
+- Zone 4: Operating Context (운영 환경 인식)
+- Zone 5: Feedback Loop (환류 메커니즘)
+
+각 Zone의 정의·작성 방법은 `templates/persona-definition-template.md` 참조.
+
+**약점 신호**: 모든 Zone을 "환경 적응에 위임"으로만 채움 → 페르소나가 
+분야 전문가로 정의된 게 아님. 분야 보편 부분에 페르소나의 전문성이 
+구체적으로 드러나야 함.
 
 ### Step 4 — 보조 요소 작성
 
@@ -107,10 +131,25 @@ docs: Update README and OPERATIONS for new persona
 ## 4. v0.1 이후 패치 절차
 
 페르소나 v0.1이 배치된 뒤 실전 의뢰로 약점 발견 시:
-- 작은 수정 → `version: 0.1.1`로 패치, 같은 파일 직접 수정
-- 큰 변경 (Algorithm 재설계 등) → `version: 0.2`로 올리고 변경 사유를 Meta에 기록
+
+**마이너 패치 (v0.1.1, v0.1.2...)** — 같은 파일 직접 수정
+- Backstory 구체 사건 보강
+- Voice 피하는 표현 추가
+- Boundaries 항목 추가·수정
+- Zone의 분야 보편 부분 보강
+- Tools 추가
+
+**메이저 패치 (v0.2)** — 변경 사유를 Meta에 기록
+- Algorithm 단계 추가·삭제·재설계
+- Lens 우선순위 재배치
+- Customization Zones 추가·삭제·재정의
+- 페르소나 정체성 변경
 
 원본 v0.1 백업은 git history로 충분. 별도 파일 보관 안 함 (YAGNI).
+
+**환경 적응(Zone 커스텀화)은 패치가 아니다.** 환경별 적응 사항은 
+환경 측에 보관. 페르소나 원본은 분야 전문가 정의 유지.
+(상세는 `DEPLOYMENT.md` 참조)
 
 ---
 
@@ -161,6 +200,8 @@ docs: Update README and OPERATIONS for new persona
 - [ ] Tools 섹션에 외부 경로 참조 0건인가
 - [ ] Meta의 차용 범위·차용 안 한 것 명시됐는가
 - [ ] 기존 페르소나(employees/) 중 누구와도 명확히 다른가
+- [ ] **Customization Zones 5개 모두 작성됐는가** (신규)
+- [ ] **Meta의 "알려진 한계" 항목이 작성됐는가** (신규)
 
-8개 모두 통과 → v0.1 배치 가능.
+10개 모두 통과 → v0.1 배치 가능.
 1개라도 미달 → Step 3·4로 돌아가 보완.
