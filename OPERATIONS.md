@@ -25,6 +25,7 @@
 | 자연어 | 매핑 |
 |---|---|
 | "콘텐츠 전략가" / "본질형 전략가" / "본질형" | `employees/content-strategist-essence.md` |
+| "리서치 전략가" / "가설형 전략가" / "가설형" | `employees/research-strategist-hypothesis.md` |
 | "draft-with-rationale" / "초안+근거" | `output-standards/draft-with-rationale.md` |
 | `@skills/content-os` (정의 파일 내부 표기) | `./skills/content-os/SKILL.md` |
 | `@skills/idea-brainstorm` | `./skills/idea-brainstorm/SKILL.md` |

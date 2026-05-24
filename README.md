@@ -17,7 +17,8 @@ persona-system/
 ├── CREATING-NEW-PERSONA.md   # 신규 페르소나 생성 표준 절차 (시스템 v0.2)
 │
 ├── employees/                # 페르소나 정의
-│   └── content-strategist-essence.md
+│   ├── content-strategist-essence.md
+│   └── research-strategist-hypothesis.md
 │
 ├── output-standards/         # 산출물 표준 템플릿
 │   └── draft-with-rationale.md
