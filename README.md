@@ -21,7 +21,8 @@ persona-system/
 │
 ├── employees/                # 페르소나 정의
 │   ├── content-strategist-essence.md
-│   └── research-strategist-hypothesis.md
+│   ├── research-strategist-hypothesis.md
+│   └── research-collector-execution.md
 │
 ├── output-standards/         # 산출물 표준 템플릿
 │   └── draft-with-rationale.md
